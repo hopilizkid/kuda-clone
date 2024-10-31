@@ -1,0 +1,61 @@
+.hero-main {
+  min-height: calc(100vh - 120px);
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 50px 10%;
+  background-color: #f8f9fa; /* Light background */
+}
+
+.hero-left {
+  display: flex;
+  flex-direction: column;
+  gap: 20px; /* Space between each inner div */
+  max-width: 50%;
+}
+
+.hero-text h1 {
+  font-size: 2.5rem;
+  color: #40196d; /* Primary text color */
+}
+
+.hero-subtext p,
+.extra-info p {
+  color: #555;
+  font-size: 1rem;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 20px;
+}
+
+.app-store,
+.google-play {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  background-color: #40196d; /* Button background */
+  color: #ffffff; /* Button text color */
+  cursor: pointer;
+}
+
+.app-store:hover,
+.google-play:hover {
+  opacity: 0.9; /* Slight hover effect */
+}
+
+.icon {
+  font-size: 1.5rem;
+}
+
+.hero-right img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px; /* Optional styling for image */
+}
