@@ -1,6 +1,10 @@
 import React from "react";
-import { FaApple, FaGooglePlay } from "react-icons/fa";
 import "./styles/Hero.css";
+import heroImg from "../assets/kuda-hero-img.png";
+import appleStore from "../assets/iosStore.svg";
+import googlePlay from "../assets/googlePlay.svg";
+import cbnImg from "../assets/cbn.svg";
+import ndic from "../assets/ndic.svg";
 
 function Hero() {
   return (
@@ -18,27 +22,28 @@ function Hero() {
             </p>
           </div>
 
-          {/* Third Content Div (with buttons) */}
           <div className="hero-buttons">
             <div className="app-store">
-              <FaApple className="icon" />
-              <span>Get it on Apple Store</span>
+              <img src={appleStore} alt="ios-store" />
             </div>
             <div className="google-play">
-              <FaGooglePlay className="icon" />
-              <span>Get it on Playstore</span>
+              <img src={googlePlay} alt="playstore" />
             </div>
           </div>
 
-          {/* Fourth Content Div */}
-          <div className="extra-info">
-            <p>Trusted by millions of users across the globe.</p>
+          <div className="naija-info">
+            <div className="cbn">
+              <img src={cbnImg} alt="cbn" />
+            </div>
+            <div className="ndic">
+              <img src={ndic} alt="ndic" />
+            </div>
           </div>
         </div>
 
         {/* Right Side of Hero Section */}
         <div className="hero-right">
-          <img src="../assets/kuda-hero-img.png" alt="Kuda App Preview" />
+          <img src={heroImg} alt="Kuda App Preview" />
         </div>
       </div>
     </section>

@@ -1,6 +1,6 @@
 import React from "react";
 import "./styles/Navbar.css";
-import nigeriaIcon from "../assets/icons8-nigeria-circular-48.png";
+import nigeriaIcon from "../assets/nigeriaIcon.svg";
 
 function Navbar() {
   return (
